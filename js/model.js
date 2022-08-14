@@ -259,7 +259,6 @@ export const findSymbolsToAnimate = () => {
     hashCurrSymbolsArr.splice(index, 1);
   });
   const hashSymbolsToAnimateArr = Array.from(new Set(hashCurrSymbolsArr));
-  console.log(hashSymbolsToAnimateArr);
 
   const symbolsToAnimate = [];
 
@@ -270,6 +269,5 @@ export const findSymbolsToAnimate = () => {
     symbolsToAnimate.push(symbolsAnimate);
   });
 
-  console.log(symbolsToAnimate.flat());
   return symbolsToAnimate.flat();
 };
